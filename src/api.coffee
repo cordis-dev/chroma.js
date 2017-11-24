@@ -3,7 +3,7 @@ chroma = (x,y,z,m) ->
     new Color x,y,z,m
 
 # CommonJS module is defined
-module.exports = chroma if module? and module.exports?
+module.exports = chroma if module? and module.exports?  
 
 if typeof define == 'function' and define.amd
     define [], () -> chroma
